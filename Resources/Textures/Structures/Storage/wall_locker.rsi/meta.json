@@ -7,6 +7,10 @@
     "y": 32
   },
   "states": [
+    { "name": "ammo" },
+    { "name": "ammo_door" },
+    { "name": "ammo_door_secure" },
+    { "name": "ammo_open" },
     { "name": "atmos_door" },
     { "name": "black_door" },
     { "name": "blue_door" },

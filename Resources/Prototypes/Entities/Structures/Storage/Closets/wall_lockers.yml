@@ -164,3 +164,30 @@
     stateDoorClosed: med_door
   - type: AccessReader
 #    access: [["Medical"]]
+
+- type: entity
+  id: ClosetWallAmmo
+  name: ship ammo wall closet
+  parent: BaseWallCloset
+  description: It's a storage unit for large caliber ammo.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: ammo
+    stateDoorOpen: ammo_open
+    stateDoorClosed: ammo_door
+    
+- type: entity
+  id: ClosetWallAmmoSecure
+  name: ship ammo wall locker
+  parent: BaseWallLocker
+  description: It's a secure storage unit for large caliber ammo.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: ammo
+    stateDoorOpen: ammo_open
+    stateDoorClosed: ammo_door_secure
+  - type: AccessReader
+    access: [["Security"]]
+    
